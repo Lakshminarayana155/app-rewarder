@@ -1,7 +1,6 @@
-/media/**
+
 /static/**
 static/**
-!/media
 !/static
 __pycache__
 */migrations/**
