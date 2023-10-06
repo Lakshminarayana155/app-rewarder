@@ -41,7 +41,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
         if (data === "User Registered successfully") {
             registrationMsg.innerHTML = "User Registered successfully. Redirecting...";
             setTimeout(function () {
-                window.location.href = "{% url 'home' %}";
+                window.location.href = "/";
             }, 2000);
             
         } else {
