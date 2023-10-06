@@ -43,6 +43,7 @@ class Users(APIView):
 @api_view(['POST'])
 def registerUser(request):
     if request.method == 'POST':
+        print("hello")
         try:
             user_data = CUserRegisterSerializer(data=request.data)
             if user_data.is_valid():

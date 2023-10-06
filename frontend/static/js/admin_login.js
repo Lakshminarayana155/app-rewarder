@@ -21,7 +21,7 @@ document.getElementById("adminLoginForm").addEventListener("submit", function (e
         return;
     }
     
-    fetch("api/admin-login/", {
+    fetch("/api/admin-login/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

@@ -23,7 +23,7 @@ document.getElementById("registrationForm").addEventListener("submit", function 
     }
     
     // Make a POST request to the registration endpoint with the CSRF token
-    fetch("api/user-register/", {
+    fetch("/api/user-register/", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
