@@ -1,7 +1,6 @@
 /media/**
 /static/**
 static/**
-frontend/static/**
 !/media
 !/static
 __pycache__

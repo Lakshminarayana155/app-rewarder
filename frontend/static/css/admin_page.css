@@ -1,0 +1,13 @@
+
+.logout-button {
+    border: 1px solid red !important;
+    color: black !important; /* Set text color to black */
+    text-align: center;
+    
+}
+
+.logout-button:hover {
+    border: 1px solid red !important; /* Red border on hover */
+    background-color: white !important; /* White background on hover */
+    color: red !important; /* Red text on hover */
+}
