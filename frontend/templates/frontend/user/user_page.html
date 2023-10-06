@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block style %}
+{% load static%}
+<link href="{% static 'css/user_page.css' %}" rel="stylesheet">
+{% endblock style %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+            <h2 id="pageTitle"></h2>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-2">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active text-center" onclick="showContent('Home', this)">Home</a>
+                <a href="#" class="list-group-item list-group-item-action text-center" onclick="showContent('Profile', this)">Profile</a>
+                <a href="#" class="list-group-item list-group-item-action text-center" onclick="showContent('Tasks', this)">Completed Tasks</a>
+                <a href="#" class="list-group-item list-group-item-action text-center" onclick="showContent('Points', this)">Points</a>
+                <a href="#" class="list-group-item list-group-item-action logout-button text-center" onclick="logout()">Logout</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div id="contentHome">
+                <!-- Home content goes here -->
+            </div>
+            <div id="contentProfile" style="display: none;">
+                <!-- Profile content goes here -->
+                <p>Welcome to Profile.</p>
+            </div>
+            <div id="contentTasks" style="display: none;">
+                <!-- Tasks content goes here -->
+                <p>This is the Tasks content.</p>
+            </div>
+            <div id="contentPoints" style="display: none;">
+                <!-- Points content goes here -->
+                <p>This is the Points content.</p>
+            </div>
+            <div id="contentAppDetail" style="display: none;">
+                <!-- Points content goes here -->
+                <p>This is the Points content.</p>
+            </div>
+            <div id="contentLogout" style="display: none;">
+                <!-- Logout content goes here -->
+                <p>This is the Logout content.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src = "{%static 'js/user_page.js' %}" type = "text/javascript"></script>
+{% endblock script %}
